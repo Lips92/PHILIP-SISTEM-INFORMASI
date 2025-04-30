@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rapot Bayangan</title>
+  <link rel="stylesheet" href="nilai.css" />
+  <!-- jsPDF & autoTable CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Rapot Bayangan Siswa</h1>
+    <table id="rapotTable">
+      <thead>
+        <tr>
+          <th>Mapel</th>
+          <th>Tugas</th>
+          <th>UTS</th>
+          <th>UAS</th>
+          <th>Rata-rata</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pemrograman Dasar</td>
+          <td>80</td>
+          <td>85</td>
+          <td>90</td>
+          <td>85</td>
+        </tr>
+        <tr>
+          <td>PKK</td>
+          <td>78</td>
+          <td>82</td>
+          <td>87</td>
+          <td>82</td>
+        </tr>
+        <tr>
+          <td>Matematika</td>
+          <td>75</td>
+          <td>80</td>
+          <td>85</td>
+          <td>80</td>
+        </tr>
+        <!-- Tambah baris lain jika perlu -->
+      </tbody>
+    </table>
+
+    <div class="actions">
+      <button onclick="previewPDF()">Preview PDF</button>
+      <button onclick="downloadPDF()">Download PDF</button>
+    </div>
+  </div>
+
+  <script>
+    async function generatePDF() {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+
+      doc.text("Rapot Bayangan Siswa", 14, 10);
+      
+      const tableRows = [];
+      const table = document.getElementById("rapotTable").getElementsByTagName("tbody")[0];
+      for (let i = 0; i < table.rows.length; i++) {
+        const cells = table.rows[i].cells;
+        const rowData = Array.from(cells).map(cell => cell.textContent);
+        tableRows.push(rowData);
+      }
+
+      doc.autoTable({
+        startY: 20,
+        head: [['Mapel', 'Tugas', 'UTS', 'UAS', 'Rata-rata']],
+        body: tableRows
+      });
+
+      return doc;
+    }
+
+    async function previewPDF() {
+      const doc = await generatePDF();
+      window.open(doc.output('bloburl'), '_blank');
+    }
+
+    async function downloadPDF() {
+      const doc = await generatePDF();
+      doc.save("rapot_bayangan.pdf");
+    }
+  </script>
+</body>
+</html>

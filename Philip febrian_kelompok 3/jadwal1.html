@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Pelajaran</title>
+  <link rel="stylesheet" href="jadwal1.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Jadwal Pelajaran (Semua Role)</h1>
+      <p>Berikut adalah jadwal pelajaran untuk setiap kelas.</p>
+    </header>
+
+    <div class="card">
+      <div class="kelas-filter">
+        <label for="kelas">Pilih Kelas:</label>
+        <select id="kelas">
+          <option>XI PPLG 1</option>
+          <option>X PPLG 2</option>
+          <option>XII DKV 1</option>
+        </select>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Hari</th>
+            <th>Jam</th>
+            <th>Mapel</th>
+            <th>Guru</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Senin</td>
+            <td class="jam">08:00–09:40</td>
+            <td>PBO</td>
+            <td>Rina</td>
+          </tr>
+          <!-- Tambahkan jadwal lainnya di sini -->
+        </tbody>
+      </table>
+    </div>
+
+    <a href="siswa.html" class="btn-dashboard">Kembali</a>
+
+    <footer>
+      <p>&copy; 2025 SMK Hang Tuah 1 Jakarta</p>
+    </footer>
+  </div>
+</body>
+</html>

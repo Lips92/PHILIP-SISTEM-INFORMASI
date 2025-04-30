@@ -1,0 +1,203 @@
+* {
+    margin:0 ;
+    padding:0 ;
+    box-sizing:border-box ;
+    font-family:Arial, sans-serif ;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 1rem 2rem;
+    position: relative;
+    height: 110px;
+}
+
+.logo {
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+}
+
+.logo-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header.container {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 70px;
+}
+
+.logo-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+nav {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.hero-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.login-button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #444;
+}
+
+@media (max-width: 768px) {
+    .hero {
+    flex-direction: column;
+    text-align: center;
+    }
+
+    .hero img {
+    margin-top: 2rem;
+    }
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin:  auto;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.address {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 1.5rem;
+}
+
+.contact-details {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-left: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.school-map {
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-contact {
+        flex-direction: column;
+    }
+    
+    .social-media {
+        justify-content: center;
+    }
+    
+    .social-icon {
+        margin: 0 0.5rem;
+    }
+}

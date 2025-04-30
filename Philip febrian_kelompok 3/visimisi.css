@@ -1,0 +1,75 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Body Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Container for center alignment */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Box styles for Visi & Misi */
+  .box {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box h2 {
+    font-size: 2rem;
+    color: #2980b9;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+  }
+  
+  .box ol {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+  }
+  
+  /* Button Styles for 'Kembali ke Dashboard' */
+  .btn-dashboard {
+    display: inline-block;
+    background-color: #16a085;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-dashboard:hover {
+    background-color: #1abc9c;
+  }
+  
+  /* Add margin-bottom to the button for spacing */
+  .btn-dashboard {
+    margin-top: 30px;
+  }
+  

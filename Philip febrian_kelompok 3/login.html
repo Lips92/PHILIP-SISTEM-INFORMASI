@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Sistem Akademik</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+  <div class="login-wrapper">
+    <div class="login-box">
+      <h2>Login Sistem Akademik</h2>
+      <form action="#" method="post">
+        <label for="role">Pilih Peran</label>
+        <select id="role" name="role" required>
+          <option value="" disabled selected>-- Pilih Peran --</option>
+          <option value="admin">Admin</option>
+          <option value="guru">Guru</option>
+          <option value="siswa">Siswa</option>
+        </select>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Masukkan username" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Masukkan password" required />
+
+        <button type="submit">Masuk</button>
+      </form>
+
+      <div class="quick-links">
+        <p>🔐 Akses cepat (simulasi):</p>
+        <a href="admin.html">Login Admin</a> |
+        <a href="siswa.html">Login Siswa</a> |
+        <a href="dashboard-guru.html">Login Guru</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

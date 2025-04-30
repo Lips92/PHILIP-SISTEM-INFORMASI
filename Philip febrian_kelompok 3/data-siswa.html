@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Siswa</title>
+  <link rel="stylesheet" href="data-siswa.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Data Siswa (Admin / Guru)</h1>
+      <p>Informasi lengkap siswa berdasarkan jurusan dan kelas.</p>
+    </header>
+
+    <div class="card">
+      <div class="filter">
+        <label for="jurusan">Filter Jurusan:</label>
+        <select id="jurusan">
+          <option>Semua Jurusan</option>
+          <option>PPLG</option>
+          <option>TKJ</option>
+          <option>RPL</option>
+        </select>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>NISN</th>
+            <th>Nama</th>
+            <th>Kelas</th>
+            <th>Jurusan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>12345</td>
+            <td>Ahmad Fikri</td>
+            <td>XI PPLG 1</td>
+            <td>PPLG</td>
+          </tr>
+          <!-- Tambahkan data siswa lainnya di sini -->
+        </tbody>
+      </table>
+    </div>
+
+    <a href="admin.html" class="btn-dashboard">Kembali</a>
+
+    <footer>
+      <p>&copy; 2025 SMK Hang Tuah 1 Jakarta</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #2980b9;
+  }
+  
+  header p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  .card {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Filter */
+  .kelas-filter {
+    margin-bottom: 20px;
+  }
+  
+  .kelas-filter label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .kelas-filter select {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  thead {
+    background-color: #2980b9;
+    color: white;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Tombol Kembali */
+  .btn-dashboard {
+    display: inline-block;
+    background-color: #16a085;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-dashboard:hover {
+    background-color: #1abc9c;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d;
+  }
+  

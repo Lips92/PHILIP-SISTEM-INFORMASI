@@ -1,0 +1,77 @@
+body {
+    font-family: monospace;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .card {
+    border: 1px dashed #aaa;
+    padding: 20px;
+    background: white;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .dropdowns {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  select {
+    font-family: monospace;
+    padding: 5px 10px;
+    margin-left: 5px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+  }
+  
+  th, td {
+    border: 1px dashed #aaa;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  input[type="number"] {
+    width: 60px;
+    font-family: monospace;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .actions {
+    text-align: center;
+  }
+  
+  button {
+    font-family: monospace;
+    padding: 8px 16px;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    cursor: pointer;
+  }
+  
