@@ -5,11 +5,6 @@
     font-family:Arial, sans-serif ;
 }
 
-body {
-    background-color: white;
-    color: black;
-}
-
 header {
     background-color: #000000;
     color: white;
@@ -77,7 +72,7 @@ nav a:hover{
 }
 
 .hero-text {
-    font-size: 1.5rem;
+    font-size: 1.5rem;  
     font-weight: bold;
 }
 
@@ -93,22 +88,6 @@ nav a:hover{
     transition: background-color 0.3s;
 }
 
-.login-button:hover {
-    background-color: #444;
-}
-
-@media (max-width: 768px) {
-    .hero {
-    flex-direction: column;
-    text-align: center;
-    }
-
-    .hero img {
-    margin-top: 2rem;
-    }
-}
-
-
 /* Footer Styles */
 .footer {
     background-color: #000;
@@ -123,81 +102,9 @@ nav a:hover{
     margin:  auto;
 }
 
-.footer-contact {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-}
-
-.address {
-    flex: 1;
-    min-width: 300px;
-    margin-bottom: 1.5rem;
-}
-
-.contact-details {
-    flex: 1;
-    min-width: 300px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.contact-item img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-.social-media {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 2rem;
-}
-
-.social-icon {
-    display: inline-block;
-    margin-left: 1rem;
-    background-color: white;
-    border-radius: 50%;
-    padding: 8px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-}
-
-.social-icon img {
-    width: 24px;
-    height: 24px;
-}
-
-.school-map {
-    margin-bottom: 2rem;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
 .copyright {
     text-align: center;
     padding-top: 1rem;
     border-top: 1px solid #333;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .footer-contact {
-        flex-direction: column;
-    }
-    
-    .social-media {
-        justify-content: center;
-    }
-    
-    .social-icon {
-        margin: 0 0.5rem;
-    }
+    margin-top: 1rem;
 }
